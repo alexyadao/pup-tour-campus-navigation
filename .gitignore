@@ -43,3 +43,15 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Environment secrets (Supabase keys)
+.env
+.env.*
+
+# Mobile binary packages
+*.apk
+*.aab
+
+# Flutter plugins & general build
+.flutter-plugins
+build/
