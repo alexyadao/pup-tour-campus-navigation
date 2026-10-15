@@ -1,0 +1,17 @@
+name: Keep Supabase Active
+
+on:
+  schedule:
+    # Runs at 00:00 UTC every 4 days
+    - cron: "0 0 */4 * *"
+  workflow_dispatch: # Allows you to test-run it manually anytime from GitHub
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase REST API
+        run: |
+          curl -s -o /dev/null -w "HTTP Status: %{http_code}\n" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            "https://cdbsfkaacfktyxirytzv.supabase.co/rest/v1/events?select=*&limit=1"
