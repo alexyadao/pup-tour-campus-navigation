@@ -1,101 +1,51 @@
-# 12.07.25 PUPTour Alpha v5.45.27 - CASTILLO #
+# PUP Tour — Interactive Campus Navigation System
 
-**Patch / Bug Fixes**
+[![Flutter Web](https://img.shields.io/badge/Flutter-Web-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
+[![Supabase](https://img.shields.io/badge/Supabase-Database%20%26%20RLS-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Production-black?logo=vercel&logoColor=white)](https://pup-tour-campus-navigation.vercel.app)
+[![CI/CD Keep-Alive](https://img.shields.io/badge/GitHub%20Actions-Cron%20Automated-2088FF?logo=github-actions&logoColor=white)](https://github.com/alexyadao/pup-tour-campus-navigation/actions)
 
-Optimized Folders for backend developing.
-- Screens (admin, guest, initial, prof, student).
+An interactive campus navigation and digital tour web application designed for the Polytechnic University of the Philippines (PUP) Main Campus. Built with Flutter Web, backed by Supabase PostgreSQL, and deployed via Vercel Edge Network.
 
-# 12.07.25 PUPTour Alpha v5.45.4 - MAG-ISA #
+---
 
-**Major**
+## 🌐 Live Production Demo
 
-Added Screens in Student Pages
-- Interactive Map
-- Direction Map
-- Customer Service
-- Navigation Building Details
-- Settings
-- Reset Password
-- Building Info
+- **Production URL:** [https://pup-tour-campus-navigation.vercel.app](https://pup-tour-campus-navigation.vercel.app)
+- **Target Platform:** Progressive Web Application (PWA) / Responsive Desktop & Mobile Web
 
-Added Screens in Guest Page
-- Lock Campus Map
-- Lock Campus Crave
-- Lock Profile
-- Change buttons navigation
-- Added Customer Service
+---
 
-Added Screens in Professor Page
-- Added Schedule Event button home page and event page
-- Change profile id
-- Change navigation buttons
-- Added Customer Service
+## ✨ Key Features
 
-Added Screens for Admin Page
-- Menu
-- Dashboard
-- User Management
-- Building Management
-- Map Editor
-- Map Management
-- Feedback Management
+- **Interactive Campus Directory:** Browse notable university landmarks and buildings (Main Building, Charlie Del Rosario Building, Library) with operational hours and historical details.
+- **Campus Events Feed:** Real-time query integration fetching verified university events with date tags, descriptions, and location mapping.
+- **Role-Based Access Control:** Configured with public guest access alongside authenticated role segregation using Supabase Row-Level Security (RLS).
+- **Responsive UI Architecture:** Custom dark maroon university color scheme (`RGB 136, 0, 21`) optimized with glassmorphic cards and dynamic mobile drawer navigation.
 
-Patch / Bug Fixes
-- Remove view stall
-- Change Bazaars to CampusCrave
+---
 
-# 12.2.25 PUPTour Alpha v1.22.2 - CASTILLO #
+## 🛠️ Tech Stack & System Architecture
 
-**Minor Updates**
+| Layer | Technology | Details |
+| :--- | :--- | :--- |
+| **Frontend Framework** | Flutter 3.x (Dart) | Compiles to single-page WebAssembly / JavaScript bundle |
+| **Backend / Database** | Supabase (PostgreSQL) | Managed database, REST API engine, and Row-Level Security policies |
+| **Hosting & Edge Delivery**| Vercel | Global CDN edge caching and static bundle distribution |
+| **Automation & CI/CD** | GitHub Actions | Automated keep-alive cron pipeline preventing free-tier dormancy |
 
-Created backend for the following screens:
-- login
+---
 
-Organized folders of the following
-- Backend folder transferred to lib folder.
-- Change auth_service.dart to login_auth.dart inside backend folder.
+## 🚀 Getting Started Locally
 
-# 11.28.25 PUPTour Alpha v1.21.0 - CASTILLO / MAG-ISA #
+### Prerequisites
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (v3.24+ recommended)
+- [Google Chrome](https://www.google.com/chrome/) for local web debugging
+- Git
 
-**Minor Updates**
+### Installation & Run
 
-Created the following "Screens" from UI
-- Admin Screen
-- Login
-- Signup
-- Forgot Password
-- Building List
-- Home Page
-- Campus Map
-- Intro1
-- Intro2
-- Intro3
-- Splash Screen
-- Profile
-- Bazaars 
-- Events
-- View Events
-- View Stalls
-
-
-Enabled Shared Preferences for the Splash Screen
-- The Onboarding Screens now remembers the first time user opens the app.
-- This update disables onboarding screens after it's skipped or done.
-
-Updated the PUPTour Icon
-
-
-# 10.30.25 PUPTour Alpha v1.3.0 - CASTILLO #
-
-**Minor**
-- Change App title to 'PUPTour
-- Updated ColorScheme to PUP (136, 0, 21, 1)
-- Updated PUPTour Logo
-
-# 10.30.25 PUPTour Alpha v1.0.0 - CASTILLO #
-
-**Major**
-- Created Flutter Application
-
-Created PUPTour Application using Flutter 3.35.7 (Dart), currently the only function of it is the initial features given by Flutter which is a counter.
-
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/alexyadao/pup-tour-campus-navigation.git](https://github.com/alexyadao/pup-tour-campus-navigation.git)
+   cd pup-tour-campus-navigation
