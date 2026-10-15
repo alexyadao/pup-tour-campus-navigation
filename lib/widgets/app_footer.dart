@@ -49,7 +49,7 @@ class AppFooter extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Image.asset(
-                  'assets/logo.png', // Using your consistent asset
+                  'assets/images/pup_logo.png', // Using your consistent asset
                   fit: BoxFit.contain,
                   errorBuilder: (c, e, s) => const Icon(Icons.school, color: Color(0xFF8E0E00)),
                 ),
